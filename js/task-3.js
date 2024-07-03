@@ -5,7 +5,7 @@ input.addEventListener("input", handleUsername);
 function handleUsername(event) {
   const inputValue = event.target.value.trim();
   if (inputValue === "") {
-    return currentName;
+    return;
   } else {
     return (currentName.textContent = inputValue);
   }
