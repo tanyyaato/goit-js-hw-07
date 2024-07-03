@@ -5,8 +5,8 @@ input.addEventListener("input", handleUsername);
 function handleUsername(event) {
   const inputValue = event.target.value.trim();
   if (inputValue === "") {
-    return;
+    currentName.textContent = "Anonymous";
   } else {
-    return (currentName.textContent = inputValue);
+    currentName.textContent = inputValue;
   }
 }
